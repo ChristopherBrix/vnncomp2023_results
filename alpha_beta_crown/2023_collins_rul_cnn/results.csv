@@ -61,16 +61,3 @@ collins_rul_cnn,./benchmarks/collins_rul_cnn/onnx/NN_rul_full_window_40.onnx,./b
 collins_rul_cnn,./benchmarks/collins_rul_cnn/onnx/NN_rul_full_window_40.onnx,./benchmarks/collins_rul_cnn/vnnlib/monotonicity_CI_shift10_w40.vnnlib,26.012666784,unsat,9.227042276
 collins_rul_cnn,./benchmarks/collins_rul_cnn/onnx/NN_rul_full_window_40.onnx,./benchmarks/collins_rul_cnn/vnnlib/monotonicity_CI_shift20_w40.vnnlib,25.987510778,unsat,9.245841557
 collins_rul_cnn,./benchmarks/test/test_nano.onnx,./benchmarks/test/test_nano.vnnlib,22.705991303,unsat,5.908911707
-collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_12673_perturbed_bbox_1_delta_0.001.vnnlib,127.383383373,sat,12.548084131
-collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_15588_perturbed_bbox_0_delta_0.005.vnnlib,128.041205758,sat,12.677751594
-collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_398_perturbed_bbox_0_delta_0.01.vnnlib,127.805290388,sat,12.602868107
-collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_398_perturbed_bbox_0_delta_0.02.vnnlib,128.840456878,sat,12.706540179
-collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_14421_perturbed_bbox_0_delta_0.05.vnnlib,127.808951022,sat,12.673006062
-collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_12761_perturbed_bbox_2_delta_0.1.vnnlib,128.890551453,sat,12.523827099
-collins_yolo_robustness,./benchmarks/test/test_nano.onnx,./benchmarks/test/test_nano.vnnlib,22.888628670,unsat,5.886930245
-test,./benchmarks/test/test_nano.onnx,./benchmarks/test/test_nano.vnnlib,23.111050182,unsat,5.842154043
-test,./benchmarks/test/test_tiny.onnx,./benchmarks/test/test_tiny.vnnlib,22.698750728,unsat,5.848904097
-test,./benchmarks/test/test_small.onnx,./benchmarks/test/test_small.vnnlib,22.730600168,unsat,5.831895775
-test,./benchmarks/test/test_sat.onnx,./benchmarks/test/test_prop.vnnlib,22.683513110,sat,5.744004526
-test,./benchmarks/test/test_unsat.onnx,./benchmarks/test/test_prop.vnnlib,23.227567836,unsat,6.363982619
-test,./benchmarks/test/test_nano.onnx,./benchmarks/test/test_nano.vnnlib,22.663525022,unsat,5.854475087

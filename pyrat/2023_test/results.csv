@@ -1,0 +1,6 @@
+test,./benchmarks/test/test_nano.onnx,./benchmarks/test/test_nano.vnnlib,2.272877456,unsat,3.654183530
+test,./benchmarks/test/test_tiny.onnx,./benchmarks/test/test_tiny.vnnlib,2.301509870,unsat,3.636865916
+test,./benchmarks/test/test_small.onnx,./benchmarks/test/test_small.vnnlib,2.284919916,unknown,3.677895689
+test,./benchmarks/test/test_sat.onnx,./benchmarks/test/test_prop.vnnlib,2.288918136,sat,3.648366079
+test,./benchmarks/test/test_unsat.onnx,./benchmarks/test/test_prop.vnnlib,2.291294540,unknown,3.640845765
+test,./benchmarks/test/test_nano.onnx,./benchmarks/test/test_nano.vnnlib,2.284286089,unsat,3.649898115

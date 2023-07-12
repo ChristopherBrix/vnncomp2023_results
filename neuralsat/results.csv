@@ -1566,3 +1566,10 @@ collins_rul_cnn,./benchmarks/collins_rul_cnn/onnx/NN_rul_full_window_40.onnx,./b
 collins_rul_cnn,./benchmarks/collins_rul_cnn/onnx/NN_rul_full_window_40.onnx,./benchmarks/collins_rul_cnn/vnnlib/monotonicity_CI_shift10_w40.vnnlib,.003446354,unsat,5.599747591
 collins_rul_cnn,./benchmarks/collins_rul_cnn/onnx/NN_rul_full_window_40.onnx,./benchmarks/collins_rul_cnn/vnnlib/monotonicity_CI_shift20_w40.vnnlib,.003202010,unsat,5.590933710
 collins_rul_cnn,./benchmarks/test/test_nano.onnx,./benchmarks/test/test_nano.vnnlib,.003181890,unsat,4.951413101
+collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_12673_perturbed_bbox_1_delta_0.001.vnnlib,.003213891,error,102.764413351
+collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_15588_perturbed_bbox_0_delta_0.005.vnnlib,.003224600,error,102.006537846
+collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_398_perturbed_bbox_0_delta_0.01.vnnlib,.003356463,error,102.098668294
+collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_398_perturbed_bbox_0_delta_0.02.vnnlib,.003303832,error,102.602097423
+collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_14421_perturbed_bbox_0_delta_0.05.vnnlib,.003241651,error,102.315072356
+collins_yolo_robustness,./benchmarks/collins_yolo_robustness/onnx/yolov5nano_LRelu_640.onnx,./benchmarks/collins_yolo_robustness/vnnlib/img_12761_perturbed_bbox_2_delta_0.1.vnnlib,.003346602,error,102.235427793
+collins_yolo_robustness,./benchmarks/test/test_nano.onnx,./benchmarks/test/test_nano.vnnlib,.003378013,unsat,4.944153928

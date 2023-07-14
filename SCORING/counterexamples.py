@@ -105,14 +105,14 @@ def is_correct_counterexample(ce_path, cat, net, prop):
 
     ################################################
 
-    res, msg = get_ce_diff(onnx_filename, vnnlib_filename, ce_path, Settings.COUNTEREXAMPLE_TOL)
+    res, msg = get_ce_diff(onnx_filename, vnnlib_filename, ce_path, Settings.COUNTEREXAMPLE_ATOL, Settings.COUNTEREXAMPLE_RTOL)
 
-    print(f"{res}: {msg}")
+    print(f"CE result {res}: {msg}")
     
     return res
 
 @cachier(cache_dir='./cachier', stale_after=datetime.timedelta(days=7))
-def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, tol):
+def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, abs_tol, rel_tol):
     """get difference in execution"""
 
     content = read_ce_file(ce_path)
@@ -169,22 +169,30 @@ def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, tol):
 
     try:
         diff = np.linalg.norm(flat_out - expected_y, ord=np.inf)
+        norm = np.linalg.norm(expected_y, ord=np.inf)
+        if norm < 1e-6: # don't divide by zero
+            rel_error = 0
+        else:
+            rel_error = diff / norm
     except ValueError as e:
         diff = 9999
+        rel_error = 9999
         extra_msg = f" ERROR: {e}"
 
     #return diff, tuple(x_list), tuple(y_list)
 
     #diff, x_tup, y_tup = res
 
-    msg = f"L-inf norm difference between onnx execution and CE file output: {diff} (limit: {tol}){extra_msg}"
+    msg = f"L-inf norm difference between onnx execution and CE file output: {diff} (rel error: {rel_error});" 
+    msg += f"(rel_limit: {rel_tol})"
+    msg += extra_msg
     rv = CounterexampleResult.CORRECT
 
-    if diff > tol:
+    if rel_error > rel_tol:
         rv = CounterexampleResult.EXEC_DOESNT_MATCH
     else:
         # output matched onnxruntime, also need to check that the spec file was obeyed
-        is_vio, msg2 = is_specification_vio(onnx_filename, vnnlib_filename, tuple(x_list), tuple(y_list), tol)
+        is_vio, msg2 = is_specification_vio(onnx_filename, vnnlib_filename, tuple(x_list), tuple(y_list), abs_tol)
 
         msg += "\n" + msg2
 
@@ -194,7 +202,7 @@ def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, tol):
 
     return rv, msg
 
-@cachier(stale_after=datetime.timedelta(days=7))
+@cachier(stale_after=datetime.timedelta(days=365))
 def is_specification_vio(onnx_filename, vnnlib_filename, x_list, expected_y, tol):
     """check that the spec file was obeyed"""
 

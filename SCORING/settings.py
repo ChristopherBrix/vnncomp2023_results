@@ -28,11 +28,12 @@ class Settings:
     UNSCORED_CATEGORIES = ['2022_carvana_unet_2022', '2022_cifar100_tinyimagenet_resnet', '2022_cifar2020', '2022_cifar_biasfield', 
                            '2022_mnist_fc', '2022_nn4sys 2022_oval21', '2022_reach_prob_density', '2022_rl_benchmarks', 
                            '2022_sri_resnet_a', '2022_sri_resnet_b', '2022_tllverifybench', '2022_vggnet16_2022']
-    ALWAYS_CHECK_COUNTEREXAMPLES = False #True
+    ALWAYS_CHECK_COUNTEREXAMPLES = True
 
     SKIP_CE_FILES = False
 
-    COUNTEREXAMPLE_TOL = 1e-4
+    COUNTEREXAMPLE_ATOL = 1e-4 # used to check if CE satisfies spec (is insice input box and violates output property)
+    COUNTEREXAMPLE_RTOL = 1e-3 # used to check if CE matches execution
 
     PENALTY_INCORRECT = -150
 

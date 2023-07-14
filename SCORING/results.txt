@@ -7897,7 +7897,7 @@ Checking counterexamplesfor index 268. Violated: 3 (['alpha_beta_crown', 'neural
 
 checking counterexample for alpha_beta_crown
 Checking ce path: ../alpha_beta_crown/2022_rl_benchmarks/dubinsrejoin_dubinsrejoin_case_unsafe_68.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 4.76837158203125e-07 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 4.76837158203125e-07 (rel error: 1.547968566021517e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #0 violated:
@@ -7905,7 +7905,7 @@ prop #0 violated:
 
 checking counterexample for neuralsat
 Checking ce path: ../neuralsat/2022_rl_benchmarks/dubinsrejoin_dubinsrejoin_case_unsafe_68.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 9.5367431640625e-07 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 9.5367431640625e-07 (rel error: 3.095937611284445e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #0 violated:
@@ -7913,7 +7913,7 @@ prop #0 violated:
 
 checking counterexample for nnenum
 Checking ce path: ../nnenum/2022_rl_benchmarks/dubinsrejoin_dubinsrejoin_case_unsafe_68.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 2.980232238769531e-07 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 2.980232238769531e-07 (rel error: 1.0832715146388979e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #0 violated:
@@ -7947,7 +7947,7 @@ Checking counterexamplesfor index 271. Violated: 3 (['alpha_beta_crown', 'neural
 
 checking counterexample for alpha_beta_crown
 Checking ce path: ../alpha_beta_crown/2022_rl_benchmarks/dubinsrejoin_dubinsrejoin_case_unsafe_71.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 1.430511474609375e-06 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 1.430511474609375e-06 (rel error: 2.542040692648469e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #0 violated:
@@ -7955,7 +7955,7 @@ prop #0 violated:
 
 checking counterexample for neuralsat
 Checking ce path: ../neuralsat/2022_rl_benchmarks/dubinsrejoin_dubinsrejoin_case_unsafe_71.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 1.430511474609375e-06 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 1.430511474609375e-06 (rel error: 2.542040692648469e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #0 violated:
@@ -7963,7 +7963,7 @@ prop #0 violated:
 
 checking counterexample for nnenum
 Checking ce path: ../nnenum/2022_rl_benchmarks/dubinsrejoin_dubinsrejoin_case_unsafe_71.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 1.430511474609375e-06 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 1.430511474609375e-06 (rel error: 2.7851349179698853e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #0 violated:
@@ -7989,7 +7989,7 @@ Checking counterexamplesfor index 273. Violated: 3 (['alpha_beta_crown', 'neural
 
 checking counterexample for alpha_beta_crown
 Checking ce path: ../alpha_beta_crown/2022_rl_benchmarks/dubinsrejoin_dubinsrejoin_case_unsafe_73.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 2.86102294921875e-06 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 2.86102294921875e-06 (rel error: 1.245919613266552e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #0 violated:
@@ -7998,7 +7998,7 @@ prop #0 violated:
 
 checking counterexample for neuralsat
 Checking ce path: ../neuralsat/2022_rl_benchmarks/dubinsrejoin_dubinsrejoin_case_unsafe_73.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 3.814697265625e-06 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 3.814697265625e-06 (rel error: 1.661226289005697e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #0 violated:
@@ -8007,7 +8007,7 @@ prop #0 violated:
 
 checking counterexample for nnenum
 Checking ce path: ../nnenum/2022_rl_benchmarks/dubinsrejoin_dubinsrejoin_case_unsafe_73.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 3.814697265625e-06 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 3.814697265625e-06 (rel error: 1.7180102623625012e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #0 violated:
@@ -10741,7 +10741,7 @@ Checking counterexamplesfor index 27. Violated: 3 (['alpha_beta_crown', 'neurals
 
 checking counterexample for alpha_beta_crown
 Checking ce path: ../alpha_beta_crown/2022_sri_resnet_b/resnet_3b2_bn_mixup_ssadv_4.0_bs128_lr-1_v2_cifar10_spec_idx_7881_eps_0.00134.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 1.6689300537109375e-06 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 1.6689300537109375e-06 (rel error: 9.374329149570234e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 prop #2 violated:
@@ -10749,12 +10749,16 @@ prop #2 violated:
 
 checking counterexample for neuralsat
 Checking ce path: ../neuralsat/2022_sri_resnet_b/resnet_3b2_bn_mixup_ssadv_4.0_bs128_lr-1_v2_cifar10_spec_idx_7881_eps_0.00134.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 0.0008026957511901855 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 0.0008026957511901855 (rel error: 0.0004507955351191045);(rel_limit: 0.001)
+Checking if spec was actually violated
+CE input X was inside box #0
+prop #2 violated:
+[-0.11186492]
 
 checking counterexample for pyrat
 Checking ce path: ../pyrat/2022_sri_resnet_b/resnet_3b2_bn_mixup_ssadv_4.0_bs128_lr-1_v2_cifar10_spec_idx_7881_eps_0.00134.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 9999 (limit: 0.0001) ERROR: operands could not be broadcast together with shapes (10,) (9,) 
-were violated counterexamples valid?: {'alpha_beta_crown': 'correct', 'neuralsat': 'exec_doesnt_match', 'pyrat': 'exec_doesnt_match'}
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 9999 (rel error: 9999);(rel_limit: 0.001) ERROR: operands could not be broadcast together with shapes (10,) (9,) 
+were violated counterexamples valid?: {'alpha_beta_crown': 'correct', 'neuralsat': 'correct', 'pyrat': 'exec_doesnt_match'}
 Row: ['resnet_3b2_bn_mixup_ssadv_4.0_bs128_lr-1_v2-cifar10_spec_idx_7881_eps_0.00134', '4.3 (v)', '0.9 (v)', '104.9 (h)', '0.3 (v)', '*multiple results*']
 True Result: sat
 27: alpha_beta_crown score: 10, is_ver: False, is_fals: True, is_fastest: False
@@ -13437,7 +13441,7 @@ Checking counterexamplesfor index 2. Violated: 1 (['nnv']), Holds: 4 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_lindex_200.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 5.551115123125783e-17 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 5.551115123125783e-17 (rel error: 1.4308929483799847e-16);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 CE input X was inside box #5
@@ -13456,7 +13460,7 @@ Checking counterexamplesfor index 3. Violated: 1 (['nnv']), Holds: 4 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_deep_lindex_200.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (rel error: 1.534690332103151e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 CE input X was inside box #5
@@ -13475,7 +13479,7 @@ Checking counterexamplesfor index 4. Violated: 1 (['nnv']), Holds: 4 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_lindex_400.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 4.76837158203125e-07 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 4.76837158203125e-07 (rel error: 4.865551433622566e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #1
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -13492,7 +13496,7 @@ Checking counterexamplesfor index 5. Violated: 1 (['nnv']), Holds: 4 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_deep_lindex_400.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (rel error: 6.082993689380686e-08);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #1
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -13509,7 +13513,7 @@ Checking counterexamplesfor index 6. Violated: 1 (['nnv']), Holds: 4 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_lindex_600.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 1.1920928955078125e-07 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 1.1920928955078125e-07 (rel error: 1.258724534429263e-07);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -13526,7 +13530,7 @@ Checking counterexamplesfor index 7. Violated: 1 (['nnv']), Holds: 4 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_deep_lindex_600.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (rel error: 6.295239955031842e-08);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -13543,7 +13547,7 @@ Checking counterexamplesfor index 8. Violated: 1 (['nnv']), Holds: 4 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_lindex_800.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 CE input X was inside box #98
@@ -13562,7 +13566,7 @@ Checking counterexamplesfor index 9. Violated: 1 (['nnv']), Holds: 4 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_deep_lindex_800.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (rel error: 7.279988730577445e-08);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 CE input X was inside box #98
@@ -13581,7 +13585,7 @@ Checking counterexamplesfor index 10. Violated: 1 (['nnv']), Holds: 4 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_lindex_1000.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #10
 CE input X was inside box #207
@@ -13600,7 +13604,7 @@ Checking counterexamplesfor index 11. Violated: 1 (['nnv']), Holds: 4 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2022_nn4sys/lindex_deep_lindex_1000.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #10
 CE input X was inside box #207
@@ -23093,7 +23097,7 @@ Checking counterexamplesfor index 107. Violated: 1 (['nnv']), Holds: 5 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_lindex_200.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #10
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -23111,7 +23115,7 @@ Checking counterexamplesfor index 108. Violated: 1 (['nnv']), Holds: 5 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_deep_lindex_200.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #10
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -23129,7 +23133,7 @@ Checking counterexamplesfor index 109. Violated: 1 (['nnv']), Holds: 5 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_lindex_400.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -23147,7 +23151,7 @@ Checking counterexamplesfor index 110. Violated: 1 (['nnv']), Holds: 5 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_deep_lindex_400.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (rel error: 6.527333764964158e-08);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -23165,7 +23169,7 @@ Checking counterexamplesfor index 111. Violated: 1 (['nnv']), Holds: 5 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_lindex_600.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #1
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -23183,7 +23187,7 @@ Checking counterexamplesfor index 112. Violated: 1 (['nnv']), Holds: 4 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_deep_lindex_600.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #1
 Note: counterexample in file did not violate the specification and so was invalid!
@@ -23201,7 +23205,7 @@ Checking counterexamplesfor index 113. Violated: 1 (['nnv']), Holds: 5 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_lindex_800.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 CE input X was inside box #305
@@ -23220,7 +23224,7 @@ Checking counterexamplesfor index 114. Violated: 1 (['nnv']), Holds: 4 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_deep_lindex_800.counterexample.gz
-spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (limit: 0.0001)
+CE result spec_not_violated: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (rel error: 8.216762804160935e-08);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 CE input X was inside box #305
@@ -23239,7 +23243,7 @@ Checking counterexamplesfor index 115. Violated: 1 (['nnv']), Holds: 5 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_lindex_1000.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 5.960464477539063e-08 (rel error: 9.353033815519638e-08);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 CE input X was inside box #47
@@ -23261,7 +23265,7 @@ Checking counterexamplesfor index 116. Violated: 1 (['nnv']), Holds: 4 (['alpha_
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_nn4sys/lindex_deep_lindex_1000.counterexample.gz
-correct: L-inf norm difference between onnx execution and CE file output: 0.0 (limit: 0.0001)
+CE result correct: L-inf norm difference between onnx execution and CE file output: 0.0 (rel error: 0.0);(rel_limit: 0.001)
 Checking if spec was actually violated
 CE input X was inside box #0
 CE input X was inside box #47
@@ -27363,7 +27367,7 @@ Checking counterexamplesfor index 4. Violated: 1 (['nnv']), Holds: 1 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000098_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.70352578163147 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.70352578163147 (rel error: 0.6581536723297148);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000098_eps_1_255', '5.3 (h)', '4.7 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27381,7 +27385,7 @@ Checking counterexamplesfor index 6. Violated: 1 (['nnv']), Holds: 1 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000386_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.313061714172363 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.313061714172363 (rel error: 0.5723371214852958);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000386_eps_1_255', '3.4 (h)', '6.1 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27393,7 +27397,7 @@ Checking counterexamplesfor index 7. Violated: 1 (['nnv']), Holds: 1 (['alpha_be
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000174_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.671487808227539 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.671487808227539 (rel error: 0.702285421605443);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000174_eps_1_255', '6.3 (h)', '5.0 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27435,7 +27439,7 @@ Checking counterexamplesfor index 13. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000056_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.238239288330078 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.238239288330078 (rel error: 0.6667475306583253);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000056_eps_1_255', '3.3 (h)', '6.1 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27459,7 +27463,7 @@ Checking counterexamplesfor index 16. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000185_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 8.225722074508667 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 8.225722074508667 (rel error: 0.933621180104471);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000185_eps_1_255', '3.3 (h)', '5.7 (v)', '119.2 (h)', '*multiple results*']
 True Result: unsat
@@ -27471,7 +27475,7 @@ Checking counterexamplesfor index 17. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000256_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.134450554847717 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.134450554847717 (rel error: 0.6994593830626864);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000256_eps_1_255', '3.4 (h)', '4.9 (v)', '111.1 (h)', '*multiple results*']
 True Result: unsat
@@ -27495,7 +27499,7 @@ Checking counterexamplesfor index 20. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000358_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.638262033462524 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.638262033462524 (rel error: 0.6902679687313289);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000358_eps_1_255', '73.3 (h)', '4.9 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27525,7 +27529,7 @@ Checking counterexamplesfor index 24. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000121_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.289375066757202 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.289375066757202 (rel error: 0.5981534156781585);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000121_eps_1_255', '3.3 (h)', '4.8 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27537,7 +27541,7 @@ Checking counterexamplesfor index 25. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000132_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.296021223068237 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.296021223068237 (rel error: 0.7390735754641056);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000132_eps_1_255', '3.4 (h)', '4.8 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27561,7 +27565,7 @@ Checking counterexamplesfor index 28. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000274_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.98005747795105 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.98005747795105 (rel error: 0.6974239049605757);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000274_eps_1_255', '3.3 (h)', '5.4 (v)', '109.6 (h)', '*multiple results*']
 True Result: unsat
@@ -27591,7 +27595,7 @@ Checking counterexamplesfor index 32. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000155_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.759998559951782 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.759998559951782 (rel error: 0.6029052478483342);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000155_eps_1_255', '3.4 (h)', '4.8 (v)', '100.9 (h)', '*multiple results*']
 True Result: unsat
@@ -27603,7 +27607,7 @@ Checking counterexamplesfor index 33. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000180_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 8.61467719078064 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 8.61467719078064 (rel error: 0.8311253228345584);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000180_eps_1_255', '3.3 (h)', '4.9 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27621,7 +27625,7 @@ Checking counterexamplesfor index 35. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000219_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.032374858856201 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.032374858856201 (rel error: 0.5808248656153411);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000219_eps_1_255', '3.4 (h)', '5.8 (v)', '90.1 (h)', '*multiple results*']
 True Result: unsat
@@ -27645,7 +27649,7 @@ Checking counterexamplesfor index 38. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000162_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.408364772796631 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.408364772796631 (rel error: 0.629789736984662);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000162_eps_1_255', '3.3 (h)', '4.8 (v)', '119.1 (h)', '*multiple results*']
 True Result: unsat
@@ -27663,7 +27667,7 @@ Checking counterexamplesfor index 40. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000410_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.513336420059204 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.513336420059204 (rel error: 0.6876757708291233);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000410_eps_1_255', '7.2 (h)', '5.0 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27675,7 +27679,7 @@ Checking counterexamplesfor index 41. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000216_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 4.751080870628357 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 4.751080870628357 (rel error: 0.5874699093607565);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000216_eps_1_255', '50.8 (h)', '4.9 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27693,7 +27697,7 @@ Checking counterexamplesfor index 43. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000013_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 7.001694440841675 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 7.001694440841675 (rel error: 0.8416472814497346);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000013_eps_1_255', '3.4 (h)', '4.9 (v)', '107.3 (h)', '*multiple results*']
 True Result: unsat
@@ -27711,7 +27715,7 @@ Checking counterexamplesfor index 45. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000045_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.164830327033997 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.164830327033997 (rel error: 0.5585579052448192);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000045_eps_1_255', '3.4 (h)', '4.7 (v)', '106.3 (h)', '*multiple results*']
 True Result: unsat
@@ -27735,7 +27739,7 @@ Checking counterexamplesfor index 48. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000021_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 9.004488468170166 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 9.004488468170166 (rel error: 1.0426184912885907);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000021_eps_1_255', '3.4 (h)', '6.6 (v)', '128.3 (h)', '*multiple results*']
 True Result: unsat
@@ -27765,7 +27769,7 @@ Checking counterexamplesfor index 52. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000448_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.054120063781738 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.054120063781738 (rel error: 0.6294135855348216);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000448_eps_1_255', '3.4 (h)', '4.7 (v)', '103.1 (h)', '*multiple results*']
 True Result: unsat
@@ -27783,7 +27787,7 @@ Checking counterexamplesfor index 54. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000222_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.28397524356842 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.28397524356842 (rel error: 0.5705179587572116);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000222_eps_1_255', '3.3 (h)', '5.9 (v)', '117.6 (h)', '*multiple results*']
 True Result: unsat
@@ -27801,7 +27805,7 @@ Checking counterexamplesfor index 56. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000357_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 7.24844765663147 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 7.24844765663147 (rel error: 0.7439136834617209);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000357_eps_1_255', '16.7 (h)', '5.0 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27813,7 +27817,7 @@ Checking counterexamplesfor index 57. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000242_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.597780704498291 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.597780704498291 (rel error: 0.6264557305713506);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000242_eps_1_255', '3.3 (h)', '4.4 (v)', '122.7 (h)', '*multiple results*']
 True Result: unsat
@@ -27825,7 +27829,7 @@ Checking counterexamplesfor index 58. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000293_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.415403604507446 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.415403604507446 (rel error: 0.5564179565896061);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000293_eps_1_255', '3.4 (h)', '4.8 (v)', '135.8 (h)', '*multiple results*']
 True Result: unsat
@@ -27837,7 +27841,7 @@ Checking counterexamplesfor index 59. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000078_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 4.333309888839722 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 4.333309888839722 (rel error: 0.5062970899368906);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000078_eps_1_255', '3.3 (h)', '4.8 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27855,7 +27859,7 @@ Checking counterexamplesfor index 61. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000415_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.988590717315674 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.988590717315674 (rel error: 0.6004439341320966);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000415_eps_1_255', '3.3 (h)', '5.7 (v)', '116.0 (h)', '*multiple results*']
 True Result: unsat
@@ -27867,7 +27871,7 @@ Checking counterexamplesfor index 62. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000356_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 8.372079849243164 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 8.372079849243164 (rel error: 0.8449120412036439);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000356_eps_1_255', '3.3 (h)', '5.0 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27879,7 +27883,7 @@ Checking counterexamplesfor index 63. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000125_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.543062686920166 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.543062686920166 (rel error: 0.4999210853155899);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000125_eps_1_255', '17.5 (h)', '4.8 (v)', '-', '*multiple results*']
 True Result: unsat
@@ -27891,7 +27895,7 @@ Checking counterexamplesfor index 64. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000400_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.642902135848999 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.642902135848999 (rel error: 0.6843105737644202);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000400_eps_1_255', '3.3 (h)', '4.6 (v)', '111.1 (h)', '*multiple results*']
 True Result: unsat
@@ -27909,7 +27913,7 @@ Checking counterexamplesfor index 66. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000401_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.637719392776489 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 6.637719392776489 (rel error: 0.769836996135636);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000401_eps_1_255', '3.4 (h)', '4.9 (v)', '110.2 (h)', '*multiple results*']
 True Result: unsat
@@ -27921,7 +27925,7 @@ Checking counterexamplesfor index 67. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000170_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 7.587122201919556 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 7.587122201919556 (rel error: 0.7632061120769361);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000170_eps_1_255', '3.4 (h)', '4.7 (v)', '109.5 (h)', '*multiple results*']
 True Result: unsat
@@ -27933,7 +27937,7 @@ Checking counterexamplesfor index 68. Violated: 1 (['nnv']), Holds: 2 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000248_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.8925172090530396 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 5.8925172090530396 (rel error: 0.6420736855614395);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000248_eps_1_255', '3.3 (h)', '4.9 (v)', '124.7 (h)', '*multiple results*']
 True Result: unsat
@@ -27945,7 +27949,7 @@ Checking counterexamplesfor index 69. Violated: 1 (['nnv']), Holds: 1 (['alpha_b
 
 checking counterexample for nnv
 Checking ce path: ../nnv/2023_yolo/TinyYOLO_TinyYOLO_prop_000123_eps_1_255.counterexample.gz
-exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 3.3552989959716797 (limit: 0.0001)
+CE result exec_doesnt_match: L-inf norm difference between onnx execution and CE file output: 3.3552989959716797 (rel error: 0.38151629011532395);(rel_limit: 0.001)
 were violated counterexamples valid?: {'nnv': 'exec_doesnt_match'}
 Row: ['TinyYOLO-TinyYOLO_prop_000123_eps_1_255', '18.0 (h)', '4.6 (v)', '-', '*multiple results*']
 True Result: unsat

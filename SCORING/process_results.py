@@ -13,7 +13,7 @@ from collections import defaultdict
 import numpy as np
 
 from counterexamples import is_correct_counterexample, CounterexampleResult
-from settings import Settings
+from settings import Settings, GnuplotSettings
 
 class ToolResult:
     """Tool's result"""
@@ -117,6 +117,18 @@ class ToolResult:
                 network = row[ToolResult.NETWORK]
                 result = row[ToolResult.RESULT]
                 cat = row[ToolResult.CATEGORY]
+
+                # in 2023, year was prepended to category
+                year = ""
+
+                if "2022" in network:
+                    year = "2022"
+                else:
+                    assert "2023" in network, f"year not found in network path: {network}"
+                    year = "2023"
+
+                cat = year + "_" + cat
+
                 prepare_time = float(row[ToolResult.PREPARE_TIME])
                 run_time = float(row[ToolResult.RUN_TIME])
 
@@ -217,6 +229,10 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
     for tool in all_tool_names:
         tool_times[tool] = []
 
+    if not ToolResult.all_categories:
+        print(f"No categories selected when scored={scored}, skipping")
+        return
+
     for cat in sorted(ToolResult.all_categories):
         print(f"\nCategory {cat}:")
 
@@ -286,12 +302,15 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
 
                     # construct counterexample path
                     row = t.category_to_list[cat][index]
-                    net = Path(row[ToolResult.NETWORK]).stem
+                    full_network_path = row[ToolResult.NETWORK]
+                    net = Path(full_network_path).stem
                     prop = Path(row[ToolResult.PROP]).stem
-
+                    
                     ce_path = f"../{t.tool_name}/{cat}/{net}_{prop}.counterexample.gz"
 
-                    assert Path(ce_path).is_file(), f"CE path not found: {ce_path}"
+                    if not Settings.SKIP_CE_FILES:
+                        assert Path(ce_path).is_file(), f"CE path not found: {ce_path} and Settings.SKIP_CE_FILES is False"
+
                     tup = ce_path, cat, net, prop
                     counterexamples_violated.append(tup)
 
@@ -309,10 +328,16 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
                 true_result = 'unsat'
             elif times_violated and not times_holds:
                 true_result = 'sat'
-            elif times_holds and times_violated:
-                print(f"WARNING: multiple results for index {index}. Violated: {len(times_violated)} " +
+
+
+            if (Settings.ALWAYS_CHECK_COUNTEREXAMPLES and times_violated) or \
+                (not Settings.ALWAYS_CHECK_COUNTEREXAMPLES and times_holds and times_violated):
+
+                print(f"Checking counterexamplesfor index {index}. Violated: {len(times_violated)} " +
                       f"({tools_violated}), Holds: {len(times_holds)} ({tools_holds})")
-                table_row.append('*multiple results*')
+                
+                if times_holds and times_violated:
+                    table_row.append('*multiple results*')
 
                 for tup, tool in zip(counterexamples_violated, tools_violated):
                     print(f"\nchecking counterexample for {tool}")
@@ -389,6 +414,8 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
                         tool_times[tool].append(t)
                         gnuplot_tool_cat_times[tool][cat].append(t)
                         gnuplot_tool_cat_times[tool]['all'].append(t)
+
+                        print(f"!! {i}: tool={tool}, cat={cat}: time={t}")
                 
                 if result == 'V':
                     num_violated += 1
@@ -398,6 +425,7 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
         print(f"Total Violated: {num_violated}")
         print(f"Total Holds: {num_holds}")
         print(f"Total Unknown: {num_unknown}")
+        
 
         print("--------------------")
         print(", ".join(tool_names))
@@ -420,7 +448,7 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
     print("\n###############")
     print("### Summary ###")
     print("###############")
-
+    
     sorted_tools = []
 
     with open(Settings.TOTAL_SCORE_LATEX, 'w', encoding='utf-8') as f:
@@ -662,7 +690,7 @@ def get_score(tool_name, res, secs, rand_gen_succeded, times_holds, times_violat
     Correct hold: 10 points
     Correct violated (where random tests did not succeed): 10 points
     Correct violated (where random test succeeded): 1 point
-    Incorrect result: -100 points
+    Incorrect result: Settings.PENALTY_INCORRECT points
 
     Time bonus: 
         The fastest tool for each solved instance will receive +2 points. 
@@ -670,7 +698,7 @@ def get_score(tool_name, res, secs, rand_gen_succeded, times_holds, times_violat
         If two tools have runtimes within 0.2 seconds, we will consider them the same runtime.
     """
 
-    penalize_no_ce = False
+    penalize_no_ce = True
 
     is_verified = False
     is_falsified = False
@@ -689,41 +717,38 @@ def get_score(tool_name, res, secs, rand_gen_succeded, times_holds, times_violat
             valid_ce = True
             break
 
-    assert not rand_gen_succeded, "VNNCOMP 2022 didn't use randgen"
+    assert not rand_gen_succeded, "VNNCOMP doesn't use randgen anymore"
+    correct_result = False
 
     if res not in ["holds", "violated"]:
         score = 0
-    elif rand_gen_succeded:
-        assert res == "violated"
-        score = 1
-
-        ToolResult.num_verified[tool_name] += 1
-        ToolResult.num_violated[tool_name] += 1
-
-        is_falsified = True
-    elif penalize_no_ce and num_holds > 0 and res == "violated" and not ce_results[tool_name]:
-        # Rule: If a witness is not provided, for the purposes of scoring if there are
-        # mismatches between tools we will count the tool without the witness as incorrect.
-        score = -100
+    elif res == "violated" and not tool_name in ce_results: # didn't check counterexample due to settings
+        correct_result = True
+    elif penalize_no_ce and res == "violated" and not ce_results[tool_name]: # in 2022 also had: num_holds > 0 
+        # Rule: If a witness is not provided when “sat” is produced, the tool will be assessed a penalty.
+        score = Settings.PENALTY_INCORRECT
         ToolResult.incorrect_results[tool_name] += 1
         print(f"tool {tool_name} did not produce a valid counterexample and there are mismatching results")
 
         ToolResult.toolerror_counts[f'{tool_name}_no-ce-but-required'] += 1
         is_error = True
-    elif res == "violated" and num_holds > 0 and not valid_ce:
-        score = -100
+    elif res == "violated" and not valid_ce:
+        # incorrect witness
+        score = Settings.PENALTY_INCORRECT
         ToolResult.incorrect_results[tool_name] += 1
         is_error = True
 
         ToolResult.toolerror_counts[f'{tool_name}_{ce_results[tool_name]}'] += 1
     elif res == "holds" and valid_ce:
-        score = -100
+        score = Settings.PENALTY_INCORRECT
         ToolResult.incorrect_results[tool_name] += 1
         is_error = True
 
         ToolResult.toolerror_counts[f'{tool_name}_incorrect_unsat'] += 1
     else:
-        # correct result!
+        correct_result = True
+    
+    if correct_result:
 
         ToolResult.num_verified[tool_name] += 1
 
@@ -740,20 +765,23 @@ def get_score(tool_name, res, secs, rand_gen_succeded, times_holds, times_violat
             
         score = 10
 
-        clamped_times = [max(t, Settings.SCORING_MIN_TIME) for t in times]
-        secs = max(secs, Settings.SCORING_MIN_TIME)
+        add_time_bonus = False
+        
+        if add_time_bonus:
+            clamped_times = [max(t, Settings.SCORING_MIN_TIME) for t in times]
+            secs = max(secs, Settings.SCORING_MIN_TIME)
 
-        min_time = min(clamped_times)
+            min_time = min(clamped_times)
 
-        if secs < min_time + 0.2:
-            score += 2
-            is_fastest = True
-        else:
-            clamped_times.remove(min_time)
-            second_time = min(clamped_times)
+            if secs < min_time + 0.2:
+                score += 2
+                is_fastest = True
+            else:
+                clamped_times.remove(min_time)
+                second_time = min(clamped_times)
 
-            if secs < second_time + 0.2:
-                score += 1
+                if secs < second_time + 0.2:
+                    score += 1
 
     return score, is_verified, is_falsified, is_fastest, is_error
 
@@ -886,7 +914,9 @@ def write_gnuplot_files(gnuplot_tool_cat_times, sorted_tools):
         cat = gps.prefix
         
         for tool in gnuplot_tool_cat_times.keys():
+            #assert cat in gnuplot_tool_cat_times[tool], f"cat {cat} not in {tool}: {gnuplot_tool_cat_times[tool].keys()}"
             times_list = gnuplot_tool_cat_times[tool][cat]
+        
             times_list.sort()
 
             with open(Settings.PLOTS_DIR + f"/accumulated-{cat}-{tool}.txt", 'w', encoding='utf-8') as f:
@@ -1161,8 +1191,13 @@ def main():
     #####################################3
     #csv_list = glob.glob("results_csv/*.csv")
     csv_list = glob.glob(Settings.CSV_GLOB)
+    #csv_list = ["../fastbatllnn/results.csv", "../nnenum/results.csv", "../alpha_beta_crown/results.csv"]
+    print("!! using hardcoded csv list")
+
     csv_list.sort()
 
+    assert csv_list, "no csv files found with glob: " + Settings.CSV_GLOB
+  
     # clear files so we can append to them
     with open(Settings.SCORED_LATEX, 'w', encoding='utf-8') as f:
         pass
@@ -1221,6 +1256,9 @@ def main():
 
     if Settings.SKIP_TOOLS:
         print(f"Note: tools were skipped: {Settings.SKIP_TOOLS}")
+
+    if Settings.SKIP_CE_FILES:
+        print(f"Note: CE file checking was skipped")
 
 if __name__ == "__main__":
     #from counterexamples import get_ce_diff

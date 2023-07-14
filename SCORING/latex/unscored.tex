@@ -1,18 +1,15 @@
 
-% Category acasxu (single_overhead=True):
+% Category 2022_carvana_unet_2022 (single_overhead=True):
 
 \begin{table}[h]
 \begin{center}
-\caption{Benchmark \texttt{acasxu}} \label{tab:cat_{cat}}
+\caption{Benchmark \texttt{2022-carvana-unet-2022}} \label{tab:cat_{cat}}
 {\setlength{\tabcolsep}{2pt}
 \begin{tabular}[h]{@{}llllllrr@{}}
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & Nnenum & 139 & 47 & 174 & 0 & 2218 & 100.0\% \\
-2 & $\alpha$,$\beta$ Crown & 139 & 46 & 59 & 0 & 2021 & 91.1\% \\
-3 & MN BaB & 110 & 46 & 52 & 0 & 1664 & 75.0\% \\
-4 & Cgdtest & 85 & 30 & 115 & 7 & 680 & 30.7\% \\
+1 & $\alpha$,$\beta$ Crown & 39 & 0 & 0 & 0 & 390 & 100.0\% \\
 \bottomrule
 \end{tabular}
 }
@@ -22,29 +19,24 @@
 
 
 \begin{figure}[h]
-\centerline{\includegraphics[width=\textwidth]{cactus/acasxu.pdf}}
-\caption{Cactus Plot for ACAS Xu (Unscored).}
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_carvana_unet_2022.pdf}}
+\caption{Cactus Plot for Carvana Unet 2022.}
 \label{fig:quantPic}
 \end{figure}
 
 
-% Category cifar2020 (single_overhead=True):
+% Category 2022_cifar100_tinyimagenet_resnet (single_overhead=True):
 
 \begin{table}[h]
 \begin{center}
-\caption{Benchmark \texttt{cifar2020}} \label{tab:cat_{cat}}
+\caption{Benchmark \texttt{2022-cifar100-tinyimagenet-resnet}} \label{tab:cat_{cat}}
 {\setlength{\tabcolsep}{2pt}
 \begin{tabular}[h]{@{}llllllrr@{}}
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & Verinet & 91 & 35 & 109 & 0 & 1486 & 100.0\% \\
-2 & $\alpha$,$\beta$ Crown & 95 & 34 & 78 & 0 & 1479 & 99.5\% \\
-3 & MN BaB & 93 & 28 & 26 & 0 & 1275 & 85.8\% \\
-4 & Nnenum & 66 & 19 & 0 & 0 & 850 & 57.2\% \\
-5 & Cgdtest & 63 & 26 & 5 & 6 & 305 & 20.5\% \\
-6 & Verapak & 0 & 15 & 1 & 0 & 152 & 10.2\% \\
-7 & Marabou & 4 & 0 & 0 & 1 & -60 & 0\% \\
+1 & $\alpha$,$\beta$ Crown & 69 & 3 & 0 & 0 & 720 & 100.0\% \\
+2 & Neuralsat & 56 & 3 & 0 & 0 & 590 & 81.9\% \\
 \bottomrule
 \end{tabular}
 }
@@ -54,8 +46,273 @@
 
 
 \begin{figure}[h]
-\centerline{\includegraphics[width=\textwidth]{cactus/cifar2020.pdf}}
-\caption{Cactus Plot for CIFAR 2020 (Unscored).}
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_cifar100_tinyimagenet_resnet.pdf}}
+\caption{Cactus Plot for CIFAR100 Tiny ImageNet ResNet.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_cifar2020 (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-cifar2020}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & Neuralsat & 148 & 42 & 0 & 0 & 1900 & 100.0\% \\
+2 & $\alpha$,$\beta$ Crown & 148 & 41 & 0 & 0 & 1890 & 99.5\% \\
+3 & Pyrat & 96 & 39 & 0 & 0 & 1350 & 71.1\% \\
+4 & Nnv & 32 & 6 & 0 & 0 & 380 & 20.0\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_cifar2020.pdf}}
+\caption{Cactus Plot for CIFAR2020.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_cifar_biasfield (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-cifar-biasfield}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & $\alpha$,$\beta$ Crown & 68 & 1 & 0 & 0 & 690 & 100.0\% \\
+2 & Neuralsat & 67 & 1 & 0 & 0 & 680 & 98.6\% \\
+3 & Pyrat & 51 & 1 & 0 & 0 & 520 & 75.4\% \\
+4 & Nnenum & 18 & 0 & 0 & 0 & 180 & 26.1\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_cifar_biasfield.pdf}}
+\caption{Cactus Plot for CIFAR Biasfield.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_mnist_fc (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-mnist-fc}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & $\alpha$,$\beta$ Crown & 68 & 18 & 0 & 0 & 860 & 100.0\% \\
+2 & Neuralsat & 46 & 18 & 0 & 0 & 640 & 74.4\% \\
+3 & Nnenum & 48 & 11 & 0 & 0 & 590 & 68.6\% \\
+4 & Pyrat & 35 & 16 & 0 & 0 & 510 & 59.3\% \\
+5 & Nnv & 30 & 4 & 0 & 0 & 340 & 39.5\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_mnist_fc.pdf}}
+\caption{Cactus Plot for MNIST FC.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_reach_prob_density (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-reach-prob-density}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & Nnenum & 22 & 14 & 0 & 0 & 360 & 100.0\% \\
+2 & $\alpha$,$\beta$ Crown & 22 & 14 & 0 & 0 & 360 & 100.0\% \\
+3 & Neuralsat & 22 & 12 & 0 & 0 & 340 & 94.4\% \\
+4 & Pyrat & 17 & 7 & 0 & 0 & 240 & 66.7\% \\
+5 & Nnv & 9 & 0 & 0 & 0 & 90 & 25.0\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_reach_prob_density.pdf}}
+\caption{Cactus Plot for Reachability Probability Density.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_rl_benchmarks (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-rl-benchmarks}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & Neuralsat & 193 & 103 & 0 & 0 & 2960 & 100.0\% \\
+2 & $\alpha$,$\beta$ Crown & 193 & 103 & 0 & 0 & 2960 & 100.0\% \\
+3 & Nnenum & 191 & 103 & 0 & 0 & 2940 & 99.3\% \\
+4 & Nnv & 177 & 90 & 0 & 0 & 2670 & 90.2\% \\
+5 & Pyrat & 191 & 96 & 0 & 3 & 2420 & 81.8\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_rl_benchmarks.pdf}}
+\caption{Cactus Plot for Reinforcement Learning Benchmarks.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_sri_resnet_a (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-sri-resnet-a}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & $\alpha$,$\beta$ Crown & 20 & 12 & 0 & 0 & 320 & 100.0\% \\
+2 & Neuralsat & 18 & 12 & 0 & 0 & 300 & 93.8\% \\
+3 & Pyrat & 5 & 11 & 0 & 0 & 160 & 50.0\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_sri_resnet_a.pdf}}
+\caption{Cactus Plot for SRI Resnet A.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_sri_resnet_b (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-sri-resnet-b}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & Neuralsat & 28 & 11 & 0 & 0 & 390 & 100.0\% \\
+2 & $\alpha$,$\beta$ Crown & 28 & 11 & 0 & 0 & 390 & 100.0\% \\
+3 & Pyrat & 13 & 11 & 0 & 0 & 240 & 61.5\% \\
+4 & Nnv & 1 & 0 & 0 & 1 & -140 & 0\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_sri_resnet_b.pdf}}
+\caption{Cactus Plot for SRI Resnet B.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_tllverifybench (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-tllverifybench}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & Neuralsat & 11 & 21 & 0 & 0 & 320 & 100.0\% \\
+2 & Fastbatllnn & 11 & 21 & 0 & 0 & 320 & 100.0\% \\
+3 & $\alpha$,$\beta$ Crown & 11 & 21 & 0 & 0 & 320 & 100.0\% \\
+4 & Pyrat & 9 & 17 & 0 & 0 & 260 & 81.2\% \\
+5 & Nnenum & 1 & 21 & 0 & 0 & 220 & 68.8\% \\
+6 & Nnv & 0 & 21 & 0 & 0 & 210 & 65.6\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_tllverifybench.pdf}}
+\caption{Cactus Plot for TLL Verify Bench (2022).}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_vggnet16_2022 (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-vggnet16-2022}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & $\alpha$,$\beta$ Crown & 14 & 1 & 0 & 0 & 150 & 100.0\% \\
+2 & Nnenum & 11 & 1 & 0 & 0 & 120 & 80.0\% \\
+3 & Pyrat & 9 & 1 & 0 & 0 & 100 & 66.7\% \\
+4 & Neuralsat & 5 & 1 & 0 & 0 & 60 & 40.0\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_vggnet16_2022.pdf}}
+\caption{Cactus Plot for VGGNet16 2022.}
 \label{fig:quantPic}
 \end{figure}
 

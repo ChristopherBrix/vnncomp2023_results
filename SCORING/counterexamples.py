@@ -56,10 +56,19 @@ def is_correct_counterexample(ce_path, cat, net, prop):
 
     print(f"Checking ce path: {ce_path}")
 
-    benchmark_repo = Settings.BENCHMARK_REPO
+    benchmark_repo = ""
+
+    for key in Settings.BENCHMARK_REPOS:
+        if key in ce_path:
+            benchmark_repo = Settings.BENCHMARK_REPOS[key]
+            break
+
+    assert benchmark_repo, f"benchmark directory (from Settings.BENCHMARK_REPOS={Settings.BENCHMARK_REPOS.keys()}) not found for ce path: {ce_path}"
  
-    onnx_filename = f"{benchmark_repo}/benchmarks/{cat}/onnx/{net}.onnx"
-    vnnlib_filename = f"{benchmark_repo}/benchmarks/{cat}/vnnlib/{prop}.vnnlib"
+    assert "_" == cat[4], f"expected year at start of cat: {cat}"
+    cat_no_year = cat[5:]
+    onnx_filename = f"{benchmark_repo}/benchmarks/{cat_no_year}/onnx/{net}.onnx"
+    vnnlib_filename = f"{benchmark_repo}/benchmarks/{cat_no_year}/vnnlib/{prop}.vnnlib"
 
     if not Path(onnx_filename).is_file():
         # try unzipping
@@ -90,7 +99,7 @@ def is_correct_counterexample(ce_path, cat, net, prop):
                     fout.write(content)
 
     assert Path(onnx_filename).is_file(), f"onnx file '{onnx_filename}' not found. " + \
-        f"After cloning benchmarks did you run setup.sh in {Settings.BENCHMARK_REPO}?"
+        f"After cloning benchmarks did you run setup.sh in {benchmark_repo}?"
     
     assert Path(vnnlib_filename).is_file(), f"vnnlib file not found: {vnnlib_filename}"
 
@@ -102,7 +111,7 @@ def is_correct_counterexample(ce_path, cat, net, prop):
     
     return res
 
-@cachier(stale_after=datetime.timedelta(days=7))
+@cachier(cache_dir='./cachier', stale_after=datetime.timedelta(days=7))
 def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, tol):
     """get difference in execution"""
 
@@ -125,10 +134,14 @@ def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, tol):
                 
         if not part:
             continue
+
+        while "  " in part:
+            part = part.replace("  ", " ")
         
         assert part[0] == '('
         part = part[1:]
 
+        #print(f"part with len={len(part.split(' '))}: {part}")
         name, num = part.split(' ')
         assert name[0:2] in ['X_', 'Y_']
 
@@ -152,13 +165,19 @@ def get_ce_diff(onnx_filename, vnnlib_filename, ce_path, tol):
     flat_out = output.flatten(flatten_order)
 
     expected_y = np.array(y_list)
-    diff = np.linalg.norm(flat_out - expected_y, ord=np.inf)
+    extra_msg = ""
+
+    try:
+        diff = np.linalg.norm(flat_out - expected_y, ord=np.inf)
+    except ValueError as e:
+        diff = 9999
+        extra_msg = f" ERROR: {e}"
 
     #return diff, tuple(x_list), tuple(y_list)
 
     #diff, x_tup, y_tup = res
 
-    msg = f"L-inf norm difference between onnx execution and CE file output: {diff} (limit: {tol})"
+    msg = f"L-inf norm difference between onnx execution and CE file output: {diff} (limit: {tol}){extra_msg}"
     rv = CounterexampleResult.CORRECT
 
     if diff > tol:

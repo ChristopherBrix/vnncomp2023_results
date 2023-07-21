@@ -1966,12 +1966,6 @@ nn4sys,vnncomp2023_benchmarks/benchmarks/nn4sys/onnx/mscn_2048d_dual.onnx,vnncom
 nn4sys,vnncomp2023_benchmarks/benchmarks/nn4sys/onnx/mscn_2048d_dual.onnx,vnncomp2023_benchmarks/benchmarks/nn4sys/vnnlib/cardinality_1_10450_2048_dual.vnnlib,600.004327291,prepare_instance_timeout,-1
 nn4sys,vnncomp2023_benchmarks/benchmarks/nn4sys/onnx/mscn_2048d_dual.onnx,vnncomp2023_benchmarks/benchmarks/nn4sys/vnnlib/cardinality_1_11080_2048_dual.vnnlib,600.003815205,prepare_instance_timeout,-1
 nn4sys,vnncomp2023_benchmarks/benchmarks/test/test_nano.onnx,vnncomp2023_benchmarks/benchmarks/test/test_nano.vnnlib,2.292472750,unsat,3.599572542
-test,vnncomp2023_benchmarks/benchmarks/test/test_nano.onnx,vnncomp2023_benchmarks/benchmarks/test/test_nano.vnnlib,2.272877456,unsat,3.654183530
-test,vnncomp2023_benchmarks/benchmarks/test/test_tiny.onnx,vnncomp2023_benchmarks/benchmarks/test/test_tiny.vnnlib,2.301509870,unsat,3.636865916
-test,vnncomp2023_benchmarks/benchmarks/test/test_small.onnx,vnncomp2023_benchmarks/benchmarks/test/test_small.vnnlib,2.284919916,unknown,3.677895689
-test,vnncomp2023_benchmarks/benchmarks/test/test_sat.onnx,vnncomp2023_benchmarks/benchmarks/test/test_prop.vnnlib,2.288918136,sat,3.648366079
-test,vnncomp2023_benchmarks/benchmarks/test/test_unsat.onnx,vnncomp2023_benchmarks/benchmarks/test/test_prop.vnnlib,2.291294540,unknown,3.640845765
-test,vnncomp2023_benchmarks/benchmarks/test/test_nano.onnx,vnncomp2023_benchmarks/benchmarks/test/test_nano.vnnlib,2.284286089,unsat,3.649898115
 tllverifybench,vnncomp2023_benchmarks/benchmarks/tllverifybench/onnx/tllBench_n=2_N=M=8_m=1_instance_0_0.onnx,vnncomp2023_benchmarks/benchmarks/tllverifybench/vnnlib/property_N=8_0.vnnlib,2.292357134,unsat,16.979546583
 tllverifybench,vnncomp2023_benchmarks/benchmarks/tllverifybench/onnx/tllBench_n=2_N=M=8_m=1_instance_0_1.onnx,vnncomp2023_benchmarks/benchmarks/tllverifybench/vnnlib/property_N=8_1.vnnlib,2.296481257,unsat,11.116929444
 tllverifybench,vnncomp2023_benchmarks/benchmarks/tllverifybench/onnx/tllBench_n=2_N=M=8_m=1_instance_0_2.onnx,vnncomp2023_benchmarks/benchmarks/tllverifybench/vnnlib/property_N=8_2.vnnlib,2.289693263,sat,3.692921556

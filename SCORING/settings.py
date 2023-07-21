@@ -26,8 +26,9 @@ class Settings:
 
     # latex or plotting may break if there are no unscored benchmarks
     UNSCORED_CATEGORIES = ['2022_carvana_unet_2022', '2022_cifar100_tinyimagenet_resnet', '2022_cifar2020', '2022_cifar_biasfield', 
-                           '2022_mnist_fc', '2022_nn4sys 2022_oval21', '2022_reach_prob_density', '2022_rl_benchmarks', 
-                           '2022_sri_resnet_a', '2022_sri_resnet_b', '2022_tllverifybench', '2022_vggnet16_2022']
+                           '2022_mnist_fc', '2022_nn4sys', '2022_oval21', '2022_reach_prob_density', '2022_rl_benchmarks',
+                           '2022_sri_resnet_a', '2022_sri_resnet_b', '2022_tllverifybench', '2022_vggnet16_2022',
+                           '2023_cctsdb_yolo', '2023_collins_yolo_robustness', '2023_metaroom', '2023_test', '2023_yolo']
     ALWAYS_CHECK_COUNTEREXAMPLES = True
 
     SKIP_CE_FILES = False
@@ -38,12 +39,17 @@ class Settings:
     PENALTY_INCORRECT = -150
 
     TOOL_NAME_SUBS_LATEX = [
-            ('alpha_beta_crown', '$\\alpha$,$\\beta$ Crown'),
-            ('mn_bab', 'MN BaB')
+            ('alpha_beta_crown', '$\\alpha$-$\\beta$-CROWN'),
+            ('mn_bab', 'MN BaB'),
+            ('fastbatllnn', 'FastBATLLNN'),
+            ('neuralsat', 'NeuralSAT'),
+            ('nnenum', 'nnenum'),
+            ('nnv', 'NNV'),
+            ('pyrat', 'PyRAT'),
             ]
 
     TOOL_NAME_SUBS_LONGTABLE = [
-            ('alpha_beta_crown', '$\\alpha$,$\\beta$-C'),
+            ('alpha_beta_crown', '$\\alpha$-$\\beta$-C'),
             ('fastbatllnn', 'FastBaT'),
             ('marabou', 'Marab'),
             ('neuralsat', 'NSAT'),
@@ -53,7 +59,12 @@ class Settings:
             ]
 
     TOOL_NAME_SUBS_GNUPLOT = [
-        ('alpha_beta_crown', 'AB-CROWN'),
+            ('alpha_beta_crown', 'AB-CROWN'),
+            ('fastbatllnn', 'FastBATLLNN'),
+            ('neuralsat', 'NeuralSAT'),
+            ('nnenum', 'nnenum'),
+            ('nnv', 'NNV'),
+            ('pyrat', 'PyRAT'),
         ]
 
     CAT_NAME_SUBS_LATEX = [
@@ -94,6 +105,7 @@ class Settings:
     
     gnuplot_data = (
         GnuplotSettings('all', 'All Instances'),
+        GnuplotSettings('all_scored', 'All Scored Instances'),
         #2022_carvana_unet_2022 2022_cifar100_tinyimagenet_resnet 2022_cifar2020 2022_cifar_biasfield 2022_mnist_fc 2022_nn4sys 2022_oval21 2022_reach_prob_density 2022_rl_benchmarks 2022_sri_resnet_a 2022_sri_resnet_b 2022_tllverifybench 2022_vggnet16_2022 2023_acasxu 2023_cctsdb_yolo 2023_cgan 2023_collins_rul_cnn 2023_collins_yolo_robustness 2023_dist_shift 2023_metaroom 2023_ml4acopf 2023_nn4sys 2023_test 2023_tllverifybench 2023_traffic_signs_recognition 2023_vggnet16 2023_vit 2023_yolo
         GnuplotSettings('2022_carvana_unet_2022', 'Carvana Unet 2022'),
         GnuplotSettings('2022_cifar100_tinyimagenet_resnet', 'CIFAR100 Tiny ImageNet ResNet'),

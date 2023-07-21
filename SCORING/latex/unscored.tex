@@ -9,7 +9,7 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & $\alpha$,$\beta$ Crown & 39 & 0 & 0 & 0 & 390 & 100.0\% \\
+1 & $\alpha$-$\beta$-CROWN & 39 & 0 & 0 & 0 & 390 & 100.0\% \\
 \bottomrule
 \end{tabular}
 }
@@ -35,8 +35,8 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & $\alpha$,$\beta$ Crown & 69 & 3 & 0 & 0 & 720 & 100.0\% \\
-2 & Neuralsat & 56 & 3 & 0 & 0 & 590 & 81.9\% \\
+1 & $\alpha$-$\beta$-CROWN & 69 & 3 & 0 & 0 & 720 & 100.0\% \\
+2 & NeuralSAT & 56 & 3 & 0 & 0 & 590 & 81.9\% \\
 \bottomrule
 \end{tabular}
 }
@@ -62,10 +62,11 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & Neuralsat & 148 & 42 & 0 & 0 & 1900 & 100.0\% \\
-2 & $\alpha$,$\beta$ Crown & 148 & 41 & 0 & 0 & 1890 & 99.5\% \\
-3 & Pyrat & 96 & 39 & 0 & 0 & 1350 & 71.1\% \\
-4 & Nnv & 32 & 6 & 0 & 0 & 380 & 20.0\% \\
+1 & NeuralSAT & 148 & 42 & 0 & 0 & 1900 & 100.0\% \\
+2 & $\alpha$-$\beta$-CROWN & 148 & 41 & 0 & 0 & 1890 & 99.5\% \\
+3 & PyRAT & 96 & 39 & 0 & 0 & 1350 & 71.1\% \\
+4 & nnenum & 66 & 19 & 0 & 0 & 850 & 44.7\% \\
+5 & NNV & 32 & 6 & 0 & 0 & 380 & 20.0\% \\
 \bottomrule
 \end{tabular}
 }
@@ -91,10 +92,10 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & $\alpha$,$\beta$ Crown & 68 & 1 & 0 & 0 & 690 & 100.0\% \\
-2 & Neuralsat & 67 & 1 & 0 & 0 & 680 & 98.6\% \\
-3 & Pyrat & 51 & 1 & 0 & 0 & 520 & 75.4\% \\
-4 & Nnenum & 18 & 0 & 0 & 0 & 180 & 26.1\% \\
+1 & $\alpha$-$\beta$-CROWN & 68 & 1 & 0 & 0 & 690 & 100.0\% \\
+2 & NeuralSAT & 67 & 1 & 0 & 0 & 680 & 98.6\% \\
+3 & PyRAT & 51 & 1 & 0 & 0 & 520 & 75.4\% \\
+4 & nnenum & 18 & 0 & 0 & 0 & 180 & 26.1\% \\
 \bottomrule
 \end{tabular}
 }
@@ -120,11 +121,11 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & $\alpha$,$\beta$ Crown & 68 & 18 & 0 & 0 & 860 & 100.0\% \\
-2 & Neuralsat & 46 & 18 & 0 & 0 & 640 & 74.4\% \\
-3 & Nnenum & 48 & 11 & 0 & 0 & 590 & 68.6\% \\
-4 & Pyrat & 35 & 16 & 0 & 0 & 510 & 59.3\% \\
-5 & Nnv & 30 & 4 & 0 & 0 & 340 & 39.5\% \\
+1 & $\alpha$-$\beta$-CROWN & 68 & 18 & 0 & 0 & 860 & 100.0\% \\
+2 & NeuralSAT & 46 & 18 & 0 & 0 & 640 & 74.4\% \\
+3 & nnenum & 48 & 11 & 0 & 0 & 590 & 68.6\% \\
+4 & PyRAT & 35 & 16 & 0 & 0 & 510 & 59.3\% \\
+5 & NNV & 30 & 4 & 0 & 0 & 340 & 39.5\% \\
 \bottomrule
 \end{tabular}
 }
@@ -140,6 +141,66 @@
 \end{figure}
 
 
+% Category 2022_nn4sys (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-nn4sys}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & $\alpha$-$\beta$-CROWN & 150 & 0 & 0 & 2 & 1200 & 100.0\% \\
+2 & NeuralSAT & 76 & 0 & 0 & 2 & 460 & 38.3\% \\
+3 & nnenum & 20 & 0 & 0 & 2 & -100 & 0\% \\
+4 & PyRAT & 12 & 0 & 0 & 2 & -180 & 0\% \\
+5 & NNV & 0 & 2 & 0 & 8 & -1180 & 0\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_nn4sys.pdf}}
+\caption{Cactus Plot for NN4SYS.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2022_oval21 (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2022-oval21}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & $\alpha$-$\beta$-CROWN & 25 & 1 & 0 & 0 & 260 & 100.0\% \\
+2 & NeuralSAT & 19 & 1 & 0 & 0 & 200 & 76.9\% \\
+3 & nnenum & 3 & 1 & 0 & 0 & 40 & 15.4\% \\
+4 & NNV & 4 & 0 & 0 & 0 & 40 & 15.4\% \\
+5 & PyRAT & 1 & 1 & 0 & 0 & 20 & 7.7\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2022_oval21.pdf}}
+\caption{Cactus Plot for OVAL 21.}
+\label{fig:quantPic}
+\end{figure}
+
+
 % Category 2022_reach_prob_density (single_overhead=True):
 
 \begin{table}[h]
@@ -150,11 +211,11 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & Nnenum & 22 & 14 & 0 & 0 & 360 & 100.0\% \\
-2 & $\alpha$,$\beta$ Crown & 22 & 14 & 0 & 0 & 360 & 100.0\% \\
-3 & Neuralsat & 22 & 12 & 0 & 0 & 340 & 94.4\% \\
-4 & Pyrat & 17 & 7 & 0 & 0 & 240 & 66.7\% \\
-5 & Nnv & 9 & 0 & 0 & 0 & 90 & 25.0\% \\
+1 & nnenum & 22 & 14 & 0 & 0 & 360 & 100.0\% \\
+2 & $\alpha$-$\beta$-CROWN & 22 & 14 & 0 & 0 & 360 & 100.0\% \\
+3 & NeuralSAT & 22 & 12 & 0 & 0 & 340 & 94.4\% \\
+4 & PyRAT & 17 & 7 & 0 & 0 & 240 & 66.7\% \\
+5 & NNV & 9 & 0 & 0 & 0 & 90 & 25.0\% \\
 \bottomrule
 \end{tabular}
 }
@@ -180,11 +241,11 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & Neuralsat & 193 & 103 & 0 & 0 & 2960 & 100.0\% \\
-2 & $\alpha$,$\beta$ Crown & 193 & 103 & 0 & 0 & 2960 & 100.0\% \\
-3 & Nnenum & 191 & 103 & 0 & 0 & 2940 & 99.3\% \\
-4 & Nnv & 177 & 90 & 0 & 0 & 2670 & 90.2\% \\
-5 & Pyrat & 191 & 96 & 0 & 3 & 2420 & 81.8\% \\
+1 & NeuralSAT & 193 & 103 & 0 & 0 & 2960 & 100.0\% \\
+2 & $\alpha$-$\beta$-CROWN & 193 & 103 & 0 & 0 & 2960 & 100.0\% \\
+3 & nnenum & 191 & 103 & 0 & 0 & 2940 & 99.3\% \\
+4 & NNV & 177 & 90 & 0 & 0 & 2670 & 90.2\% \\
+5 & PyRAT & 191 & 96 & 0 & 3 & 2420 & 81.8\% \\
 \bottomrule
 \end{tabular}
 }
@@ -210,9 +271,9 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & $\alpha$,$\beta$ Crown & 20 & 12 & 0 & 0 & 320 & 100.0\% \\
-2 & Neuralsat & 18 & 12 & 0 & 0 & 300 & 93.8\% \\
-3 & Pyrat & 5 & 11 & 0 & 0 & 160 & 50.0\% \\
+1 & $\alpha$-$\beta$-CROWN & 20 & 12 & 0 & 0 & 320 & 100.0\% \\
+2 & NeuralSAT & 18 & 12 & 0 & 0 & 300 & 93.8\% \\
+3 & PyRAT & 5 & 11 & 0 & 0 & 160 & 50.0\% \\
 \bottomrule
 \end{tabular}
 }
@@ -238,10 +299,10 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & Neuralsat & 28 & 11 & 0 & 0 & 390 & 100.0\% \\
-2 & $\alpha$,$\beta$ Crown & 28 & 11 & 0 & 0 & 390 & 100.0\% \\
-3 & Pyrat & 13 & 11 & 0 & 0 & 240 & 61.5\% \\
-4 & Nnv & 1 & 0 & 0 & 1 & -140 & 0\% \\
+1 & NeuralSAT & 28 & 11 & 0 & 0 & 390 & 100.0\% \\
+2 & $\alpha$-$\beta$-CROWN & 28 & 11 & 0 & 0 & 390 & 100.0\% \\
+3 & PyRAT & 13 & 11 & 0 & 0 & 240 & 61.5\% \\
+4 & NNV & 1 & 0 & 0 & 1 & -140 & 0\% \\
 \bottomrule
 \end{tabular}
 }
@@ -267,12 +328,12 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & Neuralsat & 11 & 21 & 0 & 0 & 320 & 100.0\% \\
-2 & Fastbatllnn & 11 & 21 & 0 & 0 & 320 & 100.0\% \\
-3 & $\alpha$,$\beta$ Crown & 11 & 21 & 0 & 0 & 320 & 100.0\% \\
-4 & Pyrat & 9 & 17 & 0 & 0 & 260 & 81.2\% \\
-5 & Nnenum & 1 & 21 & 0 & 0 & 220 & 68.8\% \\
-6 & Nnv & 0 & 21 & 0 & 0 & 210 & 65.6\% \\
+1 & NeuralSAT & 11 & 21 & 0 & 0 & 320 & 100.0\% \\
+2 & FastBATLLNN & 11 & 21 & 0 & 0 & 320 & 100.0\% \\
+3 & $\alpha$-$\beta$-CROWN & 11 & 21 & 0 & 0 & 320 & 100.0\% \\
+4 & PyRAT & 9 & 17 & 0 & 0 & 260 & 81.2\% \\
+5 & nnenum & 1 & 21 & 0 & 0 & 220 & 68.8\% \\
+6 & NNV & 0 & 21 & 0 & 0 & 210 & 65.6\% \\
 \bottomrule
 \end{tabular}
 }
@@ -298,10 +359,10 @@
 \toprule
 \textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
 \midrule
-1 & $\alpha$,$\beta$ Crown & 14 & 1 & 0 & 0 & 150 & 100.0\% \\
-2 & Nnenum & 11 & 1 & 0 & 0 & 120 & 80.0\% \\
-3 & Pyrat & 9 & 1 & 0 & 0 & 100 & 66.7\% \\
-4 & Neuralsat & 5 & 1 & 0 & 0 & 60 & 40.0\% \\
+1 & $\alpha$-$\beta$-CROWN & 14 & 1 & 0 & 0 & 150 & 100.0\% \\
+2 & nnenum & 11 & 1 & 0 & 0 & 120 & 80.0\% \\
+3 & PyRAT & 9 & 1 & 0 & 0 & 100 & 66.7\% \\
+4 & NeuralSAT & 5 & 1 & 0 & 0 & 60 & 40.0\% \\
 \bottomrule
 \end{tabular}
 }
@@ -313,6 +374,116 @@
 \begin{figure}[h]
 \centerline{\includegraphics[width=\textwidth]{cactus/2022_vggnet16_2022.pdf}}
 \caption{Cactus Plot for VGGNet16 2022.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2023_cctsdb_yolo (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2023-cctsdb-yolo}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & $\alpha$-$\beta$-CROWN & 11 & 28 & 0 & 0 & 390 & 100.0\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2023_cctsdb_yolo.pdf}}
+\caption{Cactus Plot for CCTSDb YOLO.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2023_collins_yolo_robustness (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2023-collins-yolo-robustness}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & PyRAT & 0 & 6 & 0 & 0 & 60 & 100.0\% \\
+2 & $\alpha$-$\beta$-CROWN & 0 & 6 & 0 & 0 & 60 & 100.0\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2023_collins_yolo_robustness.pdf}}
+\caption{Cactus Plot for Collins YOLO Robustness.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2023_metaroom (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2023-metaroom}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & $\alpha$-$\beta$-CROWN & 94 & 5 & 0 & 0 & 990 & 100.0\% \\
+2 & NeuralSAT & 92 & 5 & 0 & 0 & 970 & 98.0\% \\
+3 & PyRAT & 93 & 2 & 0 & 0 & 950 & 96.0\% \\
+4 & nnenum & 51 & 2 & 0 & 0 & 530 & 53.5\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2023_metaroom.pdf}}
+\caption{Cactus Plot for Metaroom.}
+\label{fig:quantPic}
+\end{figure}
+
+
+% Category 2023_yolo (single_overhead=True):
+
+\begin{table}[h]
+\begin{center}
+\caption{Benchmark \texttt{2023-yolo}} \label{tab:cat_{cat}}
+{\setlength{\tabcolsep}{2pt}
+\begin{tabular}[h]{@{}llllllrr@{}}
+\toprule
+\textbf{\# ~} & \textbf{Tool} & \textbf{Verified} & \textbf{Falsified} & \textbf{Fastest} & \textbf{Penalty} & \textbf{Score} & \textbf{Percent}\\
+\midrule
+1 & $\alpha$-$\beta$-CROWN & 63 & 0 & 0 & 0 & 630 & 100.0\% \\
+2 & PyRAT & 41 & 0 & 0 & 0 & 410 & 65.1\% \\
+3 & NNV & 0 & 0 & 0 & 41 & -6150 & 0\% \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=\textwidth]{cactus/2023_yolo.pdf}}
+\caption{Cactus Plot for YOLO.}
 \label{fig:quantPic}
 \end{figure}
 

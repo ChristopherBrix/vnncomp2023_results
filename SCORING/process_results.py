@@ -414,6 +414,8 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
                         tool_times[tool].append(t)
                         gnuplot_tool_cat_times[tool][cat].append(t)
                         gnuplot_tool_cat_times[tool]['all'].append(t)
+                        if cat not in Settings.UNSCORED_CATEGORIES:
+                            gnuplot_tool_cat_times[tool]['all_scored'].append(t)
 
                         print(f"!! {i}: tool={tool}, cat={cat}: time={t}")
                 
@@ -471,6 +473,7 @@ def compare_results(all_tool_names, gnuplot_tool_cat_times, result_list, single_
         print_table_footer(f)
 
         add_image(f, f'all')
+        add_image(f, f'all_scored')
 
     #######
     write_gnuplot_files(gnuplot_tool_cat_times, sorted_tools)

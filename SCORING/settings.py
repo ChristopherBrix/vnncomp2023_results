@@ -2,6 +2,8 @@
 vnn comp global settings
 '''
 
+import os
+
 from pathlib import Path
 
 class GnuplotSettings:
@@ -137,7 +139,11 @@ class Settings:
         GnuplotSettings('2023_yolo', 'YOLO'),
         )
     
-    BENCHMARK_REPOS = {"2023": "/home/stan/repositories/vnncomp2023_benchmarks", "2022": "/home/stan/repositories/vnncomp2022_benchmarks"}
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+    BENCHMARK_REPOS = {
+        "2023": f"{base_dir}/vnncomp2023_benchmarks",
+        "2022": f"{base_dir}/vnncomp2022_benchmarks",
+    }
     
 for r in Settings.BENCHMARK_REPOS.values():
     assert Path(r).is_dir(), f"directory in Settings.BENCHMARK_REPOS ('{r}') " + \

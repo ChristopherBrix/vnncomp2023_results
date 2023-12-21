@@ -713,11 +713,14 @@ def get_score(tool_name, res, secs, rand_gen_succeded, times_holds, times_violat
 
     #print(f"tool: {tool_name} {res}")
 
-    valid_ce = False
+    valid_ce_any_tool = False
+    valid_ce_this_tool = False
 
-    for ce_valid_res in ce_results.values():
+    for ce_tool_name, ce_valid_res in ce_results.items():
         if ce_valid_res == CounterexampleResult.CORRECT:
-            valid_ce = True
+            valid_ce_any_tool = True
+            if ce_tool_name == tool_name:
+                valid_ce_this_tool = True
             break
 
     assert not rand_gen_succeded, "VNNCOMP doesn't use randgen anymore"
@@ -735,14 +738,14 @@ def get_score(tool_name, res, secs, rand_gen_succeded, times_holds, times_violat
 
         ToolResult.toolerror_counts[f'{tool_name}_no-ce-but-required'] += 1
         is_error = True
-    elif res == "violated" and not valid_ce:
+    elif res == "violated" and not valid_ce_this_tool:
         # incorrect witness
         score = Settings.PENALTY_INCORRECT
         ToolResult.incorrect_results[tool_name] += 1
         is_error = True
 
         ToolResult.toolerror_counts[f'{tool_name}_{ce_results[tool_name]}'] += 1
-    elif res == "holds" and valid_ce:
+    elif res == "holds" and valid_ce_any_tool:
         score = Settings.PENALTY_INCORRECT
         ToolResult.incorrect_results[tool_name] += 1
         is_error = True
